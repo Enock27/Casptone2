@@ -1,0 +1,440 @@
+body {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    font-family: "Exo 2", sans-serif;
+    color: white;
+}
+
+.whoIam, .mybackground {
+    margin-top: 20px;
+    padding: 20px 0;
+    height: auto;
+}
+
+.myprojects {
+    margin-top: 20px;
+    padding: 20px 0;
+    height: auto;
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+    h1 {
+        font-size: 24px;
+    }
+    p.lead {
+        font-size: 14px;
+    }
+
+    .myprojects img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+    p.lead {
+        font-size: 16px;
+    }
+
+    .myprojects img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 32px;
+    }
+    p.lead {
+        font-size: 18px;
+    }
+
+    .myprojects img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 36px;
+    }
+    p.lead {
+        font-size: 20px;
+    }
+
+    .myprojects img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+footer {
+    background-color: #111;
+    padding: 20px 0;
+}
+.myprojects .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.myprojects .card-img-top {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.myprojects .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.myprojects .card-title {
+    margin-bottom: 10px;
+}
+
+.myprojects .card-text {
+    margin-bottom: auto;
+}
+.mybackground {
+    background-color: black;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.mybackground h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Exo 2', sans-serif;;
+}
+
+.mybackground h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #dbc0c2;
+}
+
+.mybackground ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mybackground ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.mybackground ul li:last-child {
+    border-bottom: none;
+}
+
+.mybackground ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.mybackground h3, .mybackground ul {
+    margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .mybackground ul {
+        margin-left: 40px;
+    }
+}
+
+.circle-text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle-text {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-text h1 {
+    font-size: 1.8rem;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.welcome {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.circle-text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle-text {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.circle-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-profile {
+    border-radius: 25px;
+    width: 250px;
+    height: auto;
+}
+
+.arrow-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    white-space: nowrap;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.arrow-text::before {
+    content: '➔';
+    display: inline-block;
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .circle-text {
+        width: 250px;
+        height: 250px;
+    }
+
+    .circle-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .rounded-profile {
+        width: 200px;
+    }
+
+    .arrow-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .circle-text {
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .rounded-profile {
+        width: 150px;
+    }
+
+    .arrow-text {
+        font-size: 0.9rem;
+    }
+}
+
+.mybackground {
+    background-color: #000000;
+    padding: 3rem 0;
+    color: #312d2d;
+}
+
+.mybackground h2 {
+    font-size: 2.5rem;
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.background-section {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.background-section h3.section-title {
+    font-size: 1.75rem;
+    font-family: 'Exo 2', sans-serif;
+    color: #b8aaaa;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.background-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.background-section ul li {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.background-section ul li i {
+    color: #007bff;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .mybackground h2 {
+        font-size: 2rem;
+    }
+
+    .background-section h3.section-title {
+        font-size: 1.5rem;
+    }
+
+    .background-section ul li {
+        font-size: 1rem;
+    }
+}
+
+.contact {
+    padding: 2rem 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #f8f9fa;
+}
+
+.contact .nav-link {
+    font-size: 1.1rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.contact .nav-link:hover {
+    color: #dddddd;
+}
+
+.contact p {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+@media (max-width: 576px) {
+    .contact .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact .nav {
+        justify-content: flex-start;
+    }
+
+    .contact .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+
+.whoIam, .mybackground, .myprojects, .contact {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.welcome {
+    padding: 10px 0;
+}
+
+.mybackground {
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+.myprojects .card-body {
+    padding: 10px;
+}
+
+.contact {
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .mybackground, .myprojects, .contact {
+        padding: 15px 0;
+    }
+}
